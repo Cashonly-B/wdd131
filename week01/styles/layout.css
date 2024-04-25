@@ -1,6 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     display: grid;
-    height: 100vh;
     grid-template: auto 1fr auto / auto 1fr 300px;
 }
 
@@ -31,20 +35,26 @@ footer {
 nav {
     background: black;
     grid-column: 1 / 4;
-    padding: 1rem;
-    display: block;
     text-align: center;
-    margin: 0 auto 2rem;
-    max-width: 90vw;
-    list-style: none;
+    padding: 0.5rem;
     display: flex;
     align-items: center;
-    flex: 1 1 100%;
-    flex-wrap: wrap;
+    height: 50px;
+    margin: 0;
+    font-size: 20px;
 }
 
-nav:hover {
+nav a {
+    display: block;
+	color: white;
+	padding: 0.75rem;
+	text-decoration: none;
+	text-align: center; 
+    width: 100%;
+}
+
+nav a:hover {
     text-decoration: underline;
     text-decoration-color: red;
-    font-weight: 1000px;
+    font-weight: 1000;
 }
