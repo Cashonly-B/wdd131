@@ -6,7 +6,9 @@
 body {
     display: grid;
     grid-template: auto 1fr auto / auto 1fr 30%;
+    background-color: lightgray;
 }
+
 
 /* --- Header --- */
 header {
@@ -27,6 +29,7 @@ nav {
     font-size: 22px;
     width: 100%;
 }
+
 
 /* --- Main --- */
 main {
@@ -75,10 +78,11 @@ p {
 h2 {
     text-align: center;
     margin-bottom: 5px;
+    font-size: 28px;
 }
 
 .line {
-    width: 80%;
+    width: 90%;
     height: 2px;
     background-color: black;
     margin: 0 auto;
@@ -86,14 +90,13 @@ h2 {
     
 }
 
+
+/* --- Side bar --- */
 .aside-bar {
-    background: gray;
+    background: lightgray;
     grid-column: 3 / 4;
     padding: 0px 20px;
 }
-
-
-
 
 
 /* --- Footer --- */
@@ -104,8 +107,7 @@ footer {
 }
 
 
-
-
+/* Top Links */
 nav a {
     display: block;
 	color: white;

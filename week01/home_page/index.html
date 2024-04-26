@@ -43,17 +43,22 @@
         <div class="p2">
             <img class="image-flag" src="images/american-flag.jpg" width="384" height="230" alt="American Flag">
             <p class="text" id="text2">
-                Tesadfsdfsdfsd
+                The United Stats of America is the 3rd largest coutry in the world with a population
+                of 331 million people (as of January 2022). The U.S Constitution was written in 1787
+                and is still used to this day! The U.S is known for its great and iconic landmarks
+                such as the Grand Canyon and the Statue of Liberty. NASA, the National Aeroautics &
+                Space Administration is headquartered the U.S.
             </p>
             <!-- Picture Ratio is 15:9 (Orignal size: 1920x1166) -->
             <!-- Image is 5 times smaller-->
         </div>
+        <br>
     </main>
     <div class="aside-bar" contenteditable>
         <h1 class="card">Aside Cotent</h1>
         <br>
         <p>
-            
+            sfgsdfgsdfg
         </p>
         
     </div>
@@ -62,7 +67,7 @@
 
     <footer>
         <p class="year">
-            &copy; <span id="currentyear"></span> | Cashton Bone | Utah
+            &copy; <span id="currentyear"></span> | Cashton Bone | United States
         </p>
         <p class="lastmodified">
             Last Modified: <span id="lastmodified"></span>
@@ -72,17 +77,7 @@
         /* Get the current yeat through JavaScript */
         document.getElementById('currentyear').textContent = new Date().getFullYear();
 
-        /* Get the last date and time modified in JavaScript */
-        /* In this format 10/10/1001 10:10:10 */
-        function getLastModifiedDateTime() {
-        var lastModified = new Date(document.lastModified);
-        var formattedDate = ('0'+ (lastModified.getMonth() + 1)).slice(-2) + '/' + ('0' + lastModified.getDate()).slice(-2) + '/' + lastModified.getFullYear();
-        var formattedTime = ('0'+ lastModified.getHours()).slice(-2) + ':' + ('0' + lastModified.getMinutes()).slice(-2) + ':' + ('0' + lastModified.getSeconds()).slice(-2); 
-        return formattedDate + ' ' + formattedTime;
-        }
-
-        /* Get the result from the function and put in back in the footer */
-        document.getElementById('lastmodified').textContent = getLastModifiedDateTime();
+        
     </script>
 </body>
 </html>
