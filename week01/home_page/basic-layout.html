@@ -3,43 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 1 Assignment</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Cashton Bone</title>
     <link rel="stylesheet" href="styles/layout.css">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Cashton Bone. About the author and the first home apge assignment for wdd131."/>
+    <meta name="author" content="Cashton Bone"/>
 </head>
+
 <body>
     <header>
-        <h1>Header Content</h1>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <br>
+        <h1>WDD 131: Dynamic Web Fundamentals - Cashton Bone</h1>
+        <br>
+        <nav>
+            <a href="https://www.linkedin.com/in/cashton-bone-8599111a6/" title="LinkedIn Profile">LinkedIn</a>
+            <a href="https://byui.instructure.com/" title="I-Learn - Canvas">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/19?lang=eng&id=p23#p23" title="My Favorite Scripture">Scripture</a>
+            <a href="#" title="Final Project">Final Project</a>
+        </nav>
     </header>
-
-    <nav>
-        <a href="#" title="Home">Home</a>
-        <a href="#" title="The Projects">Projects</a>
-        <a href="#" title="Our Services">Services</a>
-        <a href="#" title="Contact Us!">Contact Us</a>
-    </nav>
-
+    <br>
     <main>
-        <h1>Main Content</h1>
+        <h1 class="card">About Me</h1>
+        <br>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
-    </main>
 
+        <p class="card">
+
+        </p>
+
+    </main>
     <div class="aside-bar" contenteditable>
-        <h1>Aside Content</h1>
+        <h1 class="card">Aside Cotent</h1>
+        <br>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
     </div>
 
+    
+
     <footer>
-        <h1>Footer Content</h1>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <p class="year">
+            &copy; <span id="currentyear"></span> | Cashton Bone | Utah
+        </p>
+        <p class="lastmodified">
+            Last Modified: <span id="lastmodified"></span>
         </p>
     </footer>
+    <script>
+        /* Get the current yeat through JavaScript */
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+
+        /* Get the last date and time modified in JavaScript */
+        /* In this format 10/10/1001 10:10:10 */
+        function getLastModifiedDateTime() {
+        var lastModified = new Date(document.lastModified);
+        var formattedDate = ('0'+ (lastModified.getMonth() + 1)).slice(-2) + '/' + ('0' + lastModified.getDate()).slice(-2) + '/' + lastModified.getFullYear();
+        var formattedTime = ('0'+ lastModified.getHours()).slice(-2) + ':' + ('0' + lastModified.getMinutes()).slice(-2) + ':' + ('0' + lastModified.getSeconds()).slice(-2); 
+        return formattedDate + ' ' + formattedTime;
+        }
+
+        /* Get the result from the function and put in back in the footer */
+        document.getElementById('lastmodified').textContent = getLastModifiedDateTime();
+    </script>
 </body>
 </html>

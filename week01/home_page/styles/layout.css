@@ -5,29 +5,13 @@
 
 body {
     display: grid;
-    grid-template: auto 1fr auto / auto 1fr 300px;
+    grid-template: auto 1fr auto / auto 1fr 25%;
 }
 
+/* --- Header --- */
 header {
-    background: red;
-    padding: 2rem;
-    grid-column: 1 / 4;
-}
-
-main {
-    background: green;
-    grid-column: 1 / 3;
-    padding: 1rem;
-}
-
-.aside-bar {
-    background: yellow;
-    grid-column: 3 / 4;
-    padding: 1rem;
-}
-
-footer {
-    background: lightblue;
+    background: #21311a;
+    color: white;
     grid-column: 1 / 4;
     text-align: center;
 }
@@ -36,13 +20,43 @@ nav {
     background: black;
     grid-column: 1 / 4;
     text-align: center;
-    padding: 0.5rem;
     display: flex;
     align-items: center;
     height: 50px;
     margin: 0;
-    font-size: 20px;
+    font-size: 22px;
+    width: 100%;
 }
+
+/* --- Main --- */
+main {
+    background: lightgray;
+    grid-column: 1 / 3;
+    padding: 0px 20px;
+    min-height: 80vh;
+}
+
+.aside-bar {
+    background: gray;
+    grid-column: 3 / 4;
+    padding: 0px 20px;
+}
+
+.card { /* The Headers */
+    background: #323828;
+    color: white;
+    text-align: center;
+}
+
+/* --- Footer --- */
+footer {
+    background: lightblue;
+    grid-column: 1 / 4;
+    text-align: center;
+}
+
+
+
 
 nav a {
     display: block;
