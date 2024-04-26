@@ -5,7 +5,7 @@
 
 body {
     display: grid;
-    grid-template: auto 1fr auto / auto 1fr 25%;
+    grid-template: auto 1fr auto / auto 1fr 30%;
 }
 
 /* --- Header --- */
@@ -36,17 +36,65 @@ main {
     min-height: 80vh;
 }
 
+p {
+    font-size: 22px;
+    font-family: 'MyFont', sans-serif;
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('../fonts/Sedan-Regular.ttf') format('ttf')
+}
+
+#text1 {
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+#text2 {
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.p1 {
+    display: flex;
+    align-items: flex-start;
+}
+
+.p2 {
+    display: flex;
+    align-items: flex-start;
+}
+
+.card { /* The h1 Headers */
+    background: #323828;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.line {
+    width: 80%;
+    height: 2px;
+    background-color: black;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    
+}
+
 .aside-bar {
     background: gray;
     grid-column: 3 / 4;
     padding: 0px 20px;
 }
 
-.card { /* The Headers */
-    background: #323828;
-    color: white;
-    text-align: center;
-}
+
+
+
 
 /* --- Footer --- */
 footer {
