@@ -1,0 +1,23 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header, main, footer {
+    background-color: cyan;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 1px solid black;
+    max-width: 640px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+/* The Scriptures */
+section {
+    background-color: black;
+    padding: 1rem;
+}
