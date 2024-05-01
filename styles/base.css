@@ -35,7 +35,7 @@ nav {
 main {
     background: lightgray;
     grid-column: 1 / 3;
-    padding: 0px 20px;
+    padding: 30px 20px;
     min-height: 80vh;
 }
 
@@ -75,19 +75,27 @@ p {
     text-align: center;
 }
 
+h1 {
+    padding: 1rem;
+}
+
 h2 {
     text-align: center;
     margin-bottom: 5px;
     font-size: 28px;
+    padding: 1rem;
 }
 
 .line {
     width: 90%;
-    height: 2px;
+    height: 1px;
     background-color: black;
     margin: 0 auto;
     margin-bottom: 40px;
-    
+}
+
+div {
+    padding: 1rem;
 }
 
 
@@ -95,12 +103,16 @@ h2 {
 .aside-bar {
     background: lightgray;
     grid-column: 3 / 4;
-    padding: 0px 20px;
+    padding: 30px 20px;
 }
 
 #text3 {
     text-align: center;
     line-height: 50px;
+}
+
+a {
+    padding: 1rem;
 }
 
 
@@ -126,4 +138,16 @@ nav a:hover {
     text-decoration: underline;
     text-decoration-color: red;
     font-weight: 1000;
+}
+
+.image-me {
+    width: 167px;
+    height: auto;
+    /* Picture Ratio is 2:3 */
+}
+
+.image-flag {
+    width: 384px;
+    height: auto;
+    /* Picture Ratio is 15:9 */
 }
