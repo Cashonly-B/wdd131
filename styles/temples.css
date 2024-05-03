@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Sedan", serif;
+}
+
+h1 {
+    background-color: #0099cc;
+    display: flex;
+    justify-content: center; /* Justify things in the center but works a little differnt than align-items */
+    padding: 2rem; /* Spreads the background color so it doesn't look so squished */
+}
+
+
+nav {
+    background-color: #cc00cc;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    text-decoration: none; /* Removes underline */
+}
+
+nav a:hover {
+    border: 2px solid skyblue;
+    text-decoration: underline yellow;
+}
+
+main {
+    max-width: 500px;
+    /* justify-content: center; */
+}
+
+figure {
+    margin: 1rem auto;
+    max-width: 1000px;
+}
+
+div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  */
+    grid-gap: 20px; 
+    place-items: center;
+}
+
+img {
+    margin: 1rem;
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    margin: 1rem;
+}
