@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Sedan", serif;
+    font-family: "Freeman", serif;
 }
 
 body {
@@ -139,7 +139,7 @@ figcaption {
 /* ------------------------------ */
 footer {
     background: #0099cc;
-    width: 100%;
+    width: auto;
     padding: 10px;
     text-align: center;
     margin: 0 auto;
