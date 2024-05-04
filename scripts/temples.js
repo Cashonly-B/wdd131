@@ -7,5 +7,14 @@ function getLastModifiedDateTime() {
     return formattedDate + ' ' + formattedTime;
     }
     
-    /* Get the result from the function and put in back in the footer */
-    document.getElementById('lastmodified').textContent = getLastModifiedDateTime();
+/* Get the result from the function and put in back in the footer */
+document.getElementById('lastmodified').textContent = getLastModifiedDateTime();
+
+
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
+
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
+});
