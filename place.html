@@ -6,6 +6,7 @@
     <title>Place</title>
     <!-- CSS -->
     <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
     <!-- JS -->
     <script src="scripts/place.js" defer></script>
     <!-- Meta -->
@@ -15,40 +16,42 @@
 <body>
     <header>
         <div class="title">
-            <h1>Place Title</h1>
+            <h1>Utah</h1>
         </div>
     </header>
 
     <main>
         <!-- Main Picture -->
         <picture>
-            <source srcset="#" media="(min-width: 800px)">
-            <img src="#" alt="" width="400" height="250">
+            <source srcset="images/utah-large.webp" media="(min-width: 600px)" width="1920px" height="1080px">
+            <img src="images/utah-small.webp" alt="Utah Outdoors Picture" width="427" height="640">
         </picture>
         <!-- Data Section -->
         <div class="data">
             <h2>Data</h2>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><strong>Area: </strong>84,819 sq miles</li>
+                <li><strong>Population: </strong>3,454,232 (Jan 2024)</li>
+                <li><strong>Capital: </strong>Salt Lake City</li>
+                <li><strong>Languages: </strong>English</li>
+                <li><strong>Currency: </strong>U.S Dollars</li>
+                <li><strong>Time Zone: </strong>UTC-6</li>
+                <li><strong>Calling Code: </strong>801, 385, 435</li>
+                <li><strong>Internet TLD: </strong>.us</li>
             </ul>
         </div>
         <!-- Weather Section -->
         <div class="weather">
-            <h2>Weather</h2>
+            <h2>Weather  <p class="emoji"> ⛅ </p> </h2>
+            
             <picture>
-                <source srcset="#" media="(min-width: 800px)">
-                <img src="#" alt="" width="400" height="250">
+                <source srcset="images/weather-icon.svg" media="min-width: 800px">
             </picture>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><strong>Temperature: </strong>53°F</li>
+                <li><strong>Conditions: </strong>Partly Cloudy</li>
+                <li><strong>Wind: </strong>7 mph</li>
+                <li><strong>Wind Chill: </strong>51°F</li>
             </ul>
         </div>
     </main>
