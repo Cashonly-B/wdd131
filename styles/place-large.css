@@ -36,21 +36,25 @@
         max-width: 100%;
         height: auto;
     }
+
+    main {
+        position: relative;
+    }
     
     .data {
         position: absolute;
-        top: 50%;
-        left: 10%;
-        transform: translate(-50%, -50%);
+        top: 0px;
+        left: 0px;
+        /* transform: translate(-50%, -50%); */
         /* padding: 5px; */
     }
     
     .weather {
         position: absolute;
         /* top: 200%; */
-        bottom: -50%;
-        right: 10%;
-        transform: translate(50%, -50%);
+        bottom: 0px;
+        right: 0px;
+        /* transform: translate(50%, -50%); */
         /* padding: 5px; */
     }
 
