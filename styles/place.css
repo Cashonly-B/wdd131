@@ -22,6 +22,7 @@ h2 {
     display: flex;
     align-items: center;
     /* padding: 0; */
+    margin: 5px;
 }
 
 .emoji {
@@ -48,6 +49,13 @@ main img {
     margin: 1rem;
     font-size: 14px;
 }
+
+.weather h2, .weather-icon {
+    display: inline;
+    vertical-align: middle;
+}
+
+
 
 
 
