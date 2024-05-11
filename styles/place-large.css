@@ -17,7 +17,7 @@
 
     /* ------------------------------ */
 
-    h2::after {
+    .weather-header::after {
         content: " ⛅"; 
     }
 
