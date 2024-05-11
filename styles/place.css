@@ -2,13 +2,20 @@
     font-family: "Noto Sans", sans-serif;
 }
 
+:root {
+    --body-color: rgba(114, 17, 17, 0.932);
+    --head-foot-color: rgb(15, 6, 94);
+    --white-text: white;
+    --side-section-color:  rgb(222, 222, 222);
+}
+
 body {
-    background-color: rgba(114, 17, 17, 0.932);
+    background-color: var(--body-color);
 }
 
 header {
-    background-color: rgb(15, 6, 94);
-    color:white;
+    background-color: var(--head-foot-color);
+    color: var(--white-text);
     padding: 0.25rem;
     text-align: center;
 }
@@ -44,7 +51,7 @@ main img {
 }
 
 .data, .weather {
-    background-color: rgb(222, 222, 222);
+    background-color: var(--side-section-color);
     padding: 1px;
     margin: 1rem;
     font-size: 14px;
@@ -56,14 +63,10 @@ main img {
 }
 
 
-
-
-
-
 /* ------------------------------ */
 footer {
-    background:rgb(15, 6, 94);
-    color: white;
+    background: var(--head-foot-color);
+    color: var(--white-text);
     width: auto;
     padding: 10px;
     text-align: center;
