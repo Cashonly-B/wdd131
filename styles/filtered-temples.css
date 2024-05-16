@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Freeman", serif;
+}
+
+body {
+    text-align: center;
+}
+
+header {
+    background-color: #0099cc;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+/* h1 {
+    background-color: #0099cc;
+    display: flex;
+    justify-content: center; /* Justify things in the center but works a little differnt than align-items */
+    /*padding: 2rem; /* Spreads the background color so it doesn't look so squished
+} */
+
+
+/* nav {
+    background-color: #cc00cc;
+    margin: 0 auto;
+    max-width: 900px;
+} */
+
+nav ul {
+    list-style-type: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: #0099cc;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    text-decoration: none; /* Removes underline */
+}
+
+nav a:hover {
+    border: 2px solid skyblue;
+    text-decoration: underline yellow;
+}
+
+
+/* ----------------------------- */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    /* max-width: 800px;
+    align-items: center; */
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin: 1rem auto; */
+    /* max-width: 20px auto; */
+}
+
+div {
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+     
+    grid-gap: 20px; 
+    align-items: center;
+    margin: auto;
+    max-width: 900px;
+    /* width: fit; */
+}
+
+img {
+    margin: 0.5rem;
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    margin-bottom: 1rem;
+}
+/* ------------------------------ */
+
+#menu {
+    font-size: 1rem;
+    background: none;
+    color: black;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 5;
+}
+
+#menu::before {
+    content: "☰";
+    font-size: 25px;
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.navigation {
+    background-color: #0099cc;
+    color: darkgrey;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.navigation a {
+    color: lightgray; /* Text color in nav */
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    background-color: cyan;
+    color: white;
+    font-weight: 100;
+}
+
+.open a {
+    display: block;
+}
+
+/* ------------------------------ */
+footer {
+    background: #0099cc;
+    width: auto;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
