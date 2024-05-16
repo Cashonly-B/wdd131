@@ -21,6 +21,10 @@ header {
     /*padding: 2rem; /* Spreads the background color so it doesn't look so squished
 } */
 
+h2 {
+    font-size: 2rem;
+    padding: 1.5rem;
+}
 
 /* nav {
     background-color: #cc00cc;
@@ -143,4 +147,33 @@ footer {
     padding: 10px;
     text-align: center;
     margin: 0 auto;
+}
+
+/* ------------------------------ */
+.temple-card {
+    border: 1px solid gray;
+    border-radius: 8px;
+    /* box-shadow: 0 2px 4px black; */
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+.temple-card h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.temple-card p {
+    margin: 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+.temple-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
 }

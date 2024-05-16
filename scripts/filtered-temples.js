@@ -102,3 +102,23 @@ const temples = [
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-1636397-wallpaper.jpg"
     }
   ];
+
+  // The picture temple cards
+  document.addEventListener("DOMContentLoaded", function() {
+    const templeCardsContainer = document.getElementById('templeCards');
+
+    temples.forEach((temple) =>{
+        const templeCard = document.createElement('div');
+        templeCard.classList.add('temple-card');
+
+        templeCard.innerHTML = `
+            <h2>${temple.templeName}</h2>
+            <p>Location: ${temple.location}</p>
+            <p>Dedicated: ${temple.dedicated}</p>
+            <p>Size: ${temple.area} sq ft</p>
+            <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
+            `;
+
+            templeCardsContainer.appendChild(templeCard);
+    });
+  });

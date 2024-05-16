@@ -16,7 +16,8 @@
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
+        padding: 1.5rem;
     }
 
     #menu {
@@ -38,7 +39,40 @@
         display: block;
     }
 
-    div {
+    #templeCards {
+        display: grid;
         grid-template-columns: repeat(3, minmax(200px, 1fr));
+        grid-gap: 10px;
     }
+
+    /* Temple Card */
+    .temple-card {
+        border: 1px solid white;
+        border-radius: 8px;
+        /* box-shadow: 0 2px 4px black; */
+        padding: 20px;
+        margin-bottom: 10px;
+        background-color: #f9f9f9;
+    }
+
+    .temple-card h2 {
+        margin-top: 0;
+        font-size: 1.5rem;
+        color: #333;
+    }
+
+    .temple-card p {
+        margin: 0;
+        font-size: 1rem;
+        color: #666;
+    }
+
+    .temple-card img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-top: 20px;
+    }
+
+
 }
