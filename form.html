@@ -15,7 +15,7 @@
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Cashton Bone. About the author and the first home apge assignment for wdd131."/>
     <meta name="author" content="Cashton Bone"/>
     <!-- Script -->
-    <script src="scripts/form.js" defer></script>
+    <script src="scripts/form.js"></script>
 </head>
 <body>
     <main>
@@ -25,12 +25,12 @@
                 <label>
                     <select id="product" name="product" required>
                         <option value="" selected disabled>Choose a Product... &#9662;</option>
-                        <option value="Chair">Chair</option>
-                        <option value="Computer Speakers">Computer Speakers</option>
-                        <option value="Couch">Couch</option>
-                        <option value="Keyboard">Keyboard</option>
-                        <option value="Mouse">Mouse</option>
-                        <option value="Table">Table</option>
+                        <option value=fc-1888>Flux Capacitor</option>
+                        <option value=fc-2050>Power Laces</option>
+                        <option value=fs-1987>Time Circuits</option>
+                        <option value=ac-2000>Low Voltage Reactor</option>
+                        <option value=jj-1969>Warp Equalizer</option>
+                        <!-- <option value="Table">Table</option> -->
                     </select>
                 </label>
 
@@ -54,9 +54,9 @@
                 
 
                  <div>Your Name</div> <p class="optional">(Optional)</p>
-                 <label><input type="text" name="fname" required></label>
+                 <label><input type="text" name="fname" id="username"></label>
     
-                <input type="submit" value="Post Review">
+                <input type="submit" value="Post Review" href="review.html">
             </form>
     </main>
 
