@@ -3,9 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Cashton Bone</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+    <!-- Meta -->
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Cashton Bone. About the author and the first home apge assignment for wdd131."/>
+    <meta name="author" content="Cashton Bone"/>
+    <!-- Script -->
+    <script src="scripts/form.js" defer></script>
 </head>
 <body>
+    <main>
+        <h1>Product Review</h1>
+            <form method="get" action="review.html" class="form1">
+                <div>Product Name</div>
+                <label>
+                    <select id="product" name="product" required>
+                        <option value="" selected disabled>Choose a Product... &#9662;</option>
+                        <option value="Chair">Chair</option>
+                        <option value="Computer Speakers">Computer Speakers</option>
+                        <option value="Couch">Couch</option>
+                        <option value="Keyboard">Keyboard</option>
+                        <option value="Mouse">Mouse</option>
+                        <option value="Table">Table</option>
+                    </select>
+                </label>
+
+                <div>Overall Rating</div>
+                <label class="radio">&star;<input type="radio" name="rating" id="1star"></label>
+                <label class="radio">&star;&star;<input type="radio" name="rating" id="2star"></label>
+                <label class="radio">&star;&star;&star;<input type="radio" name="rating" id="3star"></label>
+                <label class="radio">&star;&star;&star;&star;<input type="radio" name="rating" id="4star"></label>
+                <label class="radio">&star;&star;&star;&star;&star;<input type="radio" name="rating" id="5star"></label>
+                <div>Date of Installation</div><label><input type="date" name="installDate" id="installDate" required></label>
+
+                <div>Which features did you find useful in the product?<br>
+                <em>(Check all that apply)</em></div>
+                    <label class="check"><input type="checkbox" name="editing" id="durability" value="yes"> Durability</label>
+                    <label class="check"><input type="checkbox" name="code" id="ease" value="yes"> Ease of Use</label>
+                    <label class="check"><input type="checkbox" name="process" id="performance" value="yes"> Performance</label>
+                    <label class="check"><input type="checkbox" name="client" id="design" value="yes"> Design</label>
+
+                <div>Written Review</div> <p class="optional">(Optional)</p>
+                <label><textarea></textarea></label>
+                
+
+                 <div>Your Name</div> <p class="optional">(Optional)</p>
+                 <label><input type="text" name="fname" required></label>
     
+                <input type="submit" value="Post Review">
+            </form>
+    </main>
+
+    <footer>
+        <p class="year">
+            &copy; <span id="currentyear"></span> | Cashton Bone | United States
+        </p>
+        <p class="lastmodified">
+            Last Modified: <span id="lastmodified"></span>
+        </p>
+    </footer>
 </body>
 </html>
