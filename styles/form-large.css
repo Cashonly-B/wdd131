@@ -1,0 +1,14 @@
+@media screen and (min-width: 700px){
+
+    body {
+        align-content: center;
+        margin: 0 22% 0 22%;
+    }
+
+    .form1 input[type="submit"] {
+        width: 100%;
+        max-width: 95%;
+        justify-content: center;
+        margin: 1.5rem 2%;
+    }
+}

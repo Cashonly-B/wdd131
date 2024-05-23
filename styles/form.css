@@ -61,12 +61,14 @@ form {
     border: solid 1px lightgrey;
     padding: .75rem;
     color: black;
-    width: 100%;
+    width: 95%;
     max-width: 400px;
     appearance: none;
 }
 
-
+.form1 textarea {
+    height: 4rem;
+}
 
 .form1 input[type="submit"] {
     border: solid 1px black;
