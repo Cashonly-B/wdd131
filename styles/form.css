@@ -25,10 +25,6 @@ form {
 }
 
 .radio {
-    display: inline-block;
-}
-
-.form1 input[type="radio"] {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,6 +40,10 @@ form {
     color: black;
     font-size: 1rem;
     font-weight: bold;
+}
+
+.inline {
+    display: inline-block;
 }
 
 .optional {
@@ -79,6 +79,15 @@ form {
     margin: 1rem 2% 1rem 2%;
     font-size: 1.25rem;
     font-weight: bold;
+}
+
+.stars {
+    display: flex;
+    justify-content: space-around;
+}
+
+ .countDisplay {
+    display: inline;
 }
 
 

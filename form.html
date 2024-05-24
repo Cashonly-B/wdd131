@@ -25,21 +25,17 @@
                 <label>
                     <select id="product" name="product" required>
                         <option value="" selected disabled>Choose a Product... &#9662;</option>
-                        <option value=fc-1888>Flux Capacitor</option>
-                        <option value=fc-2050>Power Laces</option>
-                        <option value=fs-1987>Time Circuits</option>
-                        <option value=ac-2000>Low Voltage Reactor</option>
-                        <option value=jj-1969>Warp Equalizer</option>
-                        <!-- <option value="Table">Table</option> -->
                     </select>
                 </label>
 
                 <div>Overall Rating</div>
+                <section class="stars">
                 <label class="radio">&star;<input type="radio" name="rating" id="1star"></label>
                 <label class="radio">&star;&star;<input type="radio" name="rating" id="2star"></label>
                 <label class="radio">&star;&star;&star;<input type="radio" name="rating" id="3star"></label>
                 <label class="radio">&star;&star;&star;&star;<input type="radio" name="rating" id="4star"></label>
                 <label class="radio">&star;&star;&star;&star;&star;<input type="radio" name="rating" id="5star"></label>
+                </section>
                 <div>Date of Installation</div><label><input type="date" name="installDate" id="installDate" required></label>
 
                 <div>Which features did you find useful in the product?<br>
@@ -49,14 +45,14 @@
                     <label class="check"><input type="checkbox" name="process" id="performance" value="yes"> Performance</label>
                     <label class="check"><input type="checkbox" name="client" id="design" value="yes"> Design</label>
 
-                <div>Written Review</div> <p class="optional">(Optional)</p>
+                <div class="inline">Written Review</div> <p class="optional">(Optional)</p>
                 <label><textarea></textarea></label>
                 
 
-                 <div>Your Name</div> <p class="optional">(Optional)</p>
+                 <div class="inline">Your Name</div> <p class="optional">(Optional)</p>
                  <label><input type="text" name="fname" id="username"></label>
     
-                <input type="submit" value="Post Review" href="review.html">
+                <input type="submit" value="Post Review">
             </form>
     </main>
 
