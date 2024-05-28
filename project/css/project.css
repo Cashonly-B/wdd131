@@ -1,0 +1,59 @@
+h1 {
+    background-color: green;
+    padding: 1.2rem;
+    text-align: center;
+}
+
+h2 {
+    background-color: lightgray;
+    padding: .5rem;
+    margin-top: 3rem;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+    width: 65%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+p, li {
+    font-size: 1.1rem;
+}
+
+footer {
+    background-color: green;
+    padding: 1.2rem;
+    text-align: center;
+    font-size: 1.7rem;
+    margin-top: 3rem;
+    font-weight: bold;
+}
+
+/* Top Links */
+nav {
+    background: black;
+    grid-column: 1 / 4;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 0;
+    font-size: 22px;
+    width: 100%;
+}
+
+nav a {
+    display: block;
+	color: white;
+	padding: 0.75rem;
+	text-decoration: none;
+	text-align: center; 
+    width: 100%;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
+    font-weight: 1000;
+}
