@@ -2,12 +2,13 @@ h1 {
     background-color: green;
     padding: 1.2rem;
     text-align: center;
+    margin: 0 auto;
 }
 
 h2 {
     background-color: lightgray;
     padding: .5rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 body {
@@ -17,16 +18,17 @@ body {
     margin: 0 auto;
 }
 
-p, li {
+p {
     font-size: 1.1rem;
+    height: 100%;
 }
 
 footer {
     background-color: green;
-    padding: 1.2rem;
+    padding: .5rem;
     text-align: center;
-    font-size: 1.7rem;
-    margin-top: 3rem;
+    font-size: 1rem;
+    margin-top: auto;
     font-weight: bold;
 }
 
