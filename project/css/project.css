@@ -1,6 +1,6 @@
 h1 {
     background-color: green;
-    padding: 1.2rem;
+    padding: .8rem;
     text-align: center;
     margin: 0 auto;
 }
@@ -9,25 +9,25 @@ h2 {
     background-color: lightgray;
     padding: .5rem;
     margin-top: 2rem;
+    font-size: 20px;
 }
 
 body {
     background-color: rgb(240, 240, 240);
-    width: 65%;
+    width: 96%;
     justify-content: center;
     margin: 0 auto;
 }
 
 p {
-    font-size: 1.1rem;
+    font-size: .9rem;
     height: 100%;
 }
 
 footer {
     background-color: green;
-    padding: .5rem;
+    padding: .1rem;
     text-align: center;
-    font-size: 1rem;
     margin-top: auto;
     font-weight: bold;
 }
@@ -41,21 +41,22 @@ nav {
     align-items: center;
     height: 50px;
     margin: 0;
-    font-size: 22px;
+    font-size: 18px;
     width: 100%;
 }
 
 nav a {
     display: block;
 	color: white;
-	padding: 0.75rem;
+	padding: 0.6rem;
 	text-decoration: none;
 	text-align: center; 
     width: 100%;
 }
 
 nav a:hover {
-    text-decoration: underline;
-    text-decoration-color: red;
+    color: rgb(178, 235, 189);
+    text-decoration: overline underline;
+    text-decoration-color: lime;
     font-weight: 1000;
 }
