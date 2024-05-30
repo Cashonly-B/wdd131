@@ -24,6 +24,18 @@ p {
     height: 100%;
 }
 
+.images {
+    width: 96%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+img {
+    margin: 1rem .5rem;
+}
+
 footer {
     background-color: green;
     padding: .1rem;

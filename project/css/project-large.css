@@ -11,6 +11,18 @@
         font-size: 1.1rem;
     }
     
+    section {
+        width: 65%;
+    }
+
+    .images {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
     body {
         width: 65%;
     }
@@ -27,4 +39,5 @@
         padding: .5rem;
         margin-top: auto;
     }
+
 }
