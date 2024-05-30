@@ -5,54 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 - Dynamic Web Fundamentals - Form</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="styles/form.css">
-    <link rel="stylesheet" href="styles/form-large.css">
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/project.css">
+    <link rel="stylesheet" href="../css/project-large.css">
+    <link rel="stylesheet" href="../css/form.css">
     <!-- Meta -->
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Form. Form page for WDD131 by Cashton Bone"/>
     <meta name="author" content="Cashton Bone"/>
     <!-- Script -->
-    <script src="scripts/form.js" defer></script>
+    <script src="../scripts/project.js" defer></script>
 </head>
 <body>
     <main>
-        <h1>Product Review</h1>
-            <form method="get" action="review.html" class="form1">
-                <div>Product Name</div>
-                <label>
-                    <select id="product" name="product" required>
-                        <option value="" selected disabled>Choose a Product... &#9662;</option>
-                    </select>
-                </label>
+        <h1>Website Review</h1>
 
-                <div>Overall Rating</div>
+            <!-- BACK -->
+             <div class="button"><nav><a href="../project.html" title="Back to Home Page">Back</a></nav></div>
+
+
+            <form method="get" action="thanks.html" class="form1">
+            <!-- -->
+                <div>Who is your favorite band out of the ones we have?</div>
+                <section class="favband">
+                <label class="band"><input type="radio" name="favband" id="sum41">Sum 41</label>
+                <label class="band"><input type="radio" name="favband" id="blink182">blink-182</label>
+                <label class="band"><input type="radio" name="favband" id="skillet">Skillet</label>
+                <label class="band"><input type="radio" name="favband" id="nofav">I don't have a favorite</label>
+                <label class="band"><input type="radio" name="favband" id="allfav" required>I love them all!</label>
+                </section>
+            <!-- -->
+                <div>What do you like about the website?<br>
+                <em>(Check all that apply)</em></div>
+                <label class="check"><input type="checkbox" name="style" id="style" value="yes"> The Style</label>
+                <label class="check"><input type="checkbox" name="easynav" id="easynav" value="yes"> Easy Navigation</label>
+                <label class="check"><input type="checkbox" name="oragnize" id="oragnize" value="yes"> Organization</label>
+                <label class="check"><input type="checkbox" name="looks" id="looks" value="yes"> Looks Appealing</label>
+                <label class="check"><input type="checkbox" name="other" id="other" value="yes"> Other: <input type="text" name="userother" id="userother"></label>
+            <!-- -->
+                <div>What rating would you give this website overall?</div>
                 <section class="stars">
                 <label class="radio">&star;<input type="radio" name="rating" id="1star"></label>
                 <label class="radio">&star;&star;<input type="radio" name="rating" id="2star"></label>
                 <label class="radio">&star;&star;&star;<input type="radio" name="rating" id="3star"></label>
                 <label class="radio">&star;&star;&star;&star;<input type="radio" name="rating" id="4star"></label>
-                <label class="radio">&star;&star;&star;&star;&star;<input type="radio" name="rating" id="5star"></label>
+                <label class="radio">&star;&star;&star;&star;&star;<input type="radio" name="rating" id="5star" required></label>
                 </section>
-                <div>Date of Installation</div><label><input type="date" name="installDate" id="installDate" required></label>
-
-                <div>Which features did you find useful in the product?<br>
-                <em>(Check all that apply)</em></div>
-                    <label class="check"><input type="checkbox" name="editing" id="durability" value="yes"> Durability</label>
-                    <label class="check"><input type="checkbox" name="code" id="ease" value="yes"> Ease of Use</label>
-                    <label class="check"><input type="checkbox" name="process" id="performance" value="yes"> Performance</label>
-                    <label class="check"><input type="checkbox" name="client" id="design" value="yes"> Design</label>
-
-                <div class="inline">Written Review</div> <p class="optional">(Optional)</p>
+            <!-- -->
+                <div class="inline">Reason for rating</div> <p class="optional">(Optional)</p>
                 <label><textarea></textarea></label>
-                
-
-                 <div class="inline">Your Name</div> <p class="optional">(Optional)</p>
-                 <label><input type="text" name="fname" id="username"></label>
-    
-                <input type="submit" value="Post Review">
+            <!-- -->
+                <div class="button"><input type="submit" value="Post Review"></div>
             </form>
     </main>
 
